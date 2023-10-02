@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class grade {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("请输入政治分数：");
+        double politicalScore = input.nextDouble();
+
+        System.out.println("请输入外语分数：");
+        double foreignLanguageScore = input.nextDouble();
+
+        System.out.println("请输入业务课一分数：");
+        double courseOneScore = input.nextDouble();
+
+        System.out.println("请输入业务课二分数：");
+        double courseTwoScore = input.nextDouble();
+
+        double totalScore = politicalScore + foreignLanguageScore + courseOneScore + courseTwoScore;
+
+        if (totalScore >= 300 && politicalScore >= 38 && foreignLanguageScore >= 38 && courseOneScore >= 57 && courseTwoScore >= 57) {
+            System.out.println("您的总分为：" + totalScore + "，达到复试线要求，可以参与复试。");
+        } else {
+            System.out.println("您的总分为：" + totalScore + "，未达到复试线要求，无法参与复试。");
+        }
+    }
+}
