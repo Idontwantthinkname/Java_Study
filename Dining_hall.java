@@ -19,7 +19,7 @@ public class Dining_hall{
             case 8:
                 System.out.println("外出就餐");
                 break;
-            default:
+            default:                // 若以上条件无效则执行以下代码
                 System.out.println("叫外卖");
         }
     }
